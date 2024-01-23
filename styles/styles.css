@@ -97,6 +97,8 @@ body {
 .conteinerResults {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5% 1% 5% 1%;
     height: 100vh;
     background-color: white;
@@ -114,11 +116,18 @@ body {
 .defaultText {
     padding: 0 10%;
     text-align: center;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .resultsParagraph {
     padding: 0 10%;
     text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 footer {
