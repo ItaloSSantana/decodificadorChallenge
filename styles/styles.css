@@ -55,7 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-block: 12em;
+    margin-block: 10em;
 }
 
 .workersInstructions {
@@ -132,7 +132,6 @@ body {
 }
 
 footer {
-    margin: 5px 0;
     height: 6vh;
     display: flex;
     justify-content: center;
@@ -177,10 +176,6 @@ footer {
 }
 
 @media (max-width: 542px) {
-    .content {
-        height: 90vh;
-    }
-
     .contentConteiner {
         padding: 0;
     }
@@ -209,9 +204,5 @@ footer {
 
     .resultsParagraph {
         padding: 0%;
-    }
-
-    footer {
-        height: 10vh;
     }
 }
