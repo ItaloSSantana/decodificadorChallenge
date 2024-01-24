@@ -132,6 +132,7 @@ body {
 }
 
 footer {
+    margin: 5px 0;
     height: 6vh;
     display: flex;
     justify-content: center;
@@ -181,8 +182,8 @@ footer {
     }
 
     .workplaceWorkers {
-        margin: 14em 0 0 0;
-        align-items: center;
+        margin: 10rem 0 0 0;
+        align-items: flex-start;
     }
 
     .workersButtons {
@@ -198,6 +199,6 @@ footer {
     }
 
     .conteinerResults {
-        height: 30vh;
+        height: 15%;
     }
 }
