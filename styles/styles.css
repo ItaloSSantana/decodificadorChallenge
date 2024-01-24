@@ -40,8 +40,7 @@ body {
 
 .workplaceInput {
     width: 40vw;
-    padding-bottom: 70%;
-    padding-top: 2%;
+    padding-block: 2em;
     border: none;
     outline: 0;
     font-size: 2rem;
@@ -56,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-block: 12em;
 }
 
 .workersInstructions {
@@ -141,7 +141,7 @@ footer {
     background-color: var(--secondary-color);
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .content {
         padding: 4% 4% 0% 4%;
     }
@@ -154,15 +154,19 @@ footer {
 
     .conteinerWorkplace {
         width: 80vw;
+        padding: 0;
     }
 
     .workplaceInput {
         width: 80vw;
-        padding-bottom: 86%;
+    }
+
+    .workplaceWorkers {
+        margin: 15em 0 0 0;
     }
 
     .conteinerResults {
-        height: 10vh;
+        height: 15vh;
         width: 80vw;
     }
 
@@ -171,16 +175,29 @@ footer {
     }
 }
 
-@media (max-width: 768px) and (max-height: 1056) {
+@media (max-width: 542px) {
     .contentConteiner {
-        height: 70%;
+        padding: 0;
     }
 
-    .workplaceInput {
-        padding-bottom: 50%;
+    .workplaceWorkers {
+        margin: 14em 0 0 0;
+        align-items: center;
     }
 
-    .conteinerWorkplace {
-        height: 70vh;
+    .workersButtons {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonsButton {
+        width: 100%;
+    }
+
+    .conteinerResults {
+        height: 30vh;
     }
 }
