@@ -99,6 +99,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    word-break: break-word;
     padding: 5% 1% 5% 1%;
     width: 30vw;
     height: 80vh;
@@ -108,10 +109,16 @@ body {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
-.resultsResult {}
+.resultsResult {
+    max-height: 100vh;
+    display: inline-block;
+    word-break: break-word;
+    border: 2px solid red
+}
 
 .resultsImage {
     width: 50%;
+    visibility: visible;
 }
 
 .defaultText {
@@ -121,6 +128,7 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
+    visibility: visible;
 }
 
 .resultsParagraph {
@@ -129,6 +137,7 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    visibility: visible;
 }
 
 footer {
