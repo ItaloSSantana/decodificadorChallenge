@@ -177,6 +177,10 @@ footer {
 }
 
 @media (max-width: 542px) {
+    .content {
+        height: 90vh;
+    }
+
     .contentConteiner {
         padding: 0;
     }
@@ -200,5 +204,9 @@ footer {
 
     .conteinerResults {
         height: 15%;
+    }
+
+    footer {
+        height: 10vh;
     }
 }
