@@ -7,8 +7,10 @@
 }
 
 :root {
-    --primary-color: #f3f5fc;
-    --secondary-color: #0a3871;
+    --primary-color: #DCF2F1;
+    --secondary-color: #365486;
+    --tertiary-color: #7FC7D9;
+    --hover-color: #0F1035;
 }
 
 body {
@@ -83,15 +85,26 @@ body {
     width: 50%;
 }
 
-.buttonCrypt {
-    background-color: #0a3871;
-    color: white;
+.buttonEncrypt {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.buttonEncrypt:hover {
+    background-color: var(--hover-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .buttonDecrypt {
-    background-color: #D8DFE8;
+    background-color: var(--tertiary-color);
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
+}
+
+.buttonDecrypt:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-color);
 }
 
 .conteinerResults {
@@ -101,16 +114,37 @@ body {
     align-items: center;
     padding: 5% 1% 5% 1%;
     width: 30vw;
-    height: 80vh;
+    height: auto;
     background-color: white;
     border-radius: 24px;
     gap: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
+.resultsConteiner {
+    display: none;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .resultsResult {
     max-height: 80vh;
-    word-break: break-word;
+}
+
+.buttonCopy {
+    display: block;
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    margin-inline: 25%;
+}
+
+.buttonCopy:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-color);
 }
 
 .resultsImage {
@@ -137,6 +171,8 @@ body {
     visibility: visible;
 }
 
+
+
 footer {
     height: 6vh;
     display: flex;
@@ -149,7 +185,7 @@ footer {
 
 @media (max-width: 768px) {
     .content {
-        padding: 4% 4% 0% 4%;
+        padding: 4% 0% 0% 0%;
     }
 
     .contentConteiner {
@@ -172,12 +208,13 @@ footer {
     }
 
     .conteinerResults {
-        height: 15vh;
+        height: auto;
         width: 80vw;
     }
 
     .resultsResult {
         max-height: 15vh;
+        padding: 0 2%;
     }
 
     .resultsImage {
@@ -208,7 +245,7 @@ footer {
     }
 
     .conteinerResults {
-        height: 30vh;
+        height: 60em;
         padding: 0;
     }
 

@@ -1,7 +1,8 @@
-
+let defaultText = document.getElementById("defaultText");
 
 function getText() {
     let field = document.getElementById('workplaceInput').value;
+    field = field.toLowerCase()
     return field;
 }
 
@@ -12,8 +13,16 @@ function encryptPressed() {
     text = text.replace(/i/g, "imes");
     text = text.replace(/o/g, "ober");
     text = text.replace(/u/g, "ufat");
-    document.getElementById('resultsResult').innerHTML = text
-    checkImage(text)
+    showResult(text);
+}
+
+function checkSpecialCharacter(text) {
+    var format = /[´`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]/;
+    if (format.test(text)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function decryptPressed() {
@@ -23,22 +32,31 @@ function decryptPressed() {
     text = text.replace(/imes/g, "i");
     text = text.replace(/ober/g, "o");
     text = text.replace(/ufat/g, "u");
-    document.getElementById('resultsResult').innerHTML = text;
-    checkImage(text);
+    showResult(text);
 }
 
-function checkImage(text) {
+function showResult(text) {
     let imageMessageNotFound = document.getElementById("resultsImage");
-    let defaultText = document.getElementById("defaultText");
+
     let resultsParagraph = document.getElementById("resultsParagraph");
-    console.log(defaultText);
-    if (text != '') {
+    let resultsDisplay = document.getElementById("resultsDisplay")
+    document.getElementById('resultsResult').innerHTML = text
+
+    if (checkSpecialCharacter(text)) {
+        defaultText.innerHTML = "Insira um texto sem acentos"
+        defaultText.style.color = "red"
+    } else if (text != '') {
         defaultText.style.display = "none";
         imageMessageNotFound.style.display = "none";
         resultsParagraph.style.display = "none";
+        resultsDisplay.style.display = "flex";
     } else {
-        defaultText.style.display = "block";
-        imageMessageNotFound.style.display = "block";
-        resultsParagraph.style.display = "block";
+        defaultText.innerHTML = "Nenhuma mensagem encontrada"
+        defaultText.style.color = "black"
+        defaultText.style.display = "flex";
+        imageMessageNotFound.style.display = "flex";
+        resultsParagraph.style.display = "flex";
+        resultsDisplay.style.display = "none";
     }
 }
+
