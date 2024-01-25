@@ -60,3 +60,9 @@ function showResult(text) {
     }
 }
 
+function copyFromClipboard() {
+    let copyText = document.getElementById("resultsResult").innerHTML;
+    navigator.clipboard.writeText(copyText);
+    alert('texto copiado');
+}
+
