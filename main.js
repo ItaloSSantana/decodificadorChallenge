@@ -33,8 +33,12 @@ function checkImage(text) {
     let resultsParagraph = document.getElementById("resultsParagraph");
     console.log(defaultText);
     if (text != '') {
-        defaultText.style.visibility = "hidden";
-        imageMessageNotFound.style.visibility = "hidden";
-        resultsParagraph.style.visibility = "hidden";
+        defaultText.style.display = "none";
+        imageMessageNotFound.style.display = "none";
+        resultsParagraph.style.display = "none";
+    } else {
+        defaultText.style.display = "block";
+        imageMessageNotFound.style.display = "block";
+        resultsParagraph.style.display = "block";
     }
 }

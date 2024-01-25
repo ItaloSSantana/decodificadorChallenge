@@ -99,7 +99,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    word-break: break-word;
     padding: 5% 1% 5% 1%;
     width: 30vw;
     height: 80vh;
@@ -110,10 +109,8 @@ body {
 }
 
 .resultsResult {
-    max-height: 100vh;
-    display: inline-block;
+    max-height: 80vh;
     word-break: break-word;
-    border: 2px solid red
 }
 
 .resultsImage {
@@ -177,6 +174,10 @@ footer {
     .conteinerResults {
         height: 15vh;
         width: 80vw;
+    }
+
+    .resultsResult {
+        max-height: 15vh;
     }
 
     .resultsImage {
