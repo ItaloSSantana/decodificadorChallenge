@@ -3,13 +3,6 @@
 <h2>�� Sobre</h2>
 <p>Projeto utilizado no challenge da ONE</p>
 
-<h2>�� Como funciona a criptografia </h2>
-- `"e" para "enter"`
-- 
-- "i" para "imes"
-- "a" para "ai"
-- "o" para "ober"
-- "u" para "ufat"
 
 ## �� Tecnologias utilizadas
 <div>
