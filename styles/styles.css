@@ -13,22 +13,23 @@
     --hover-color: #0F1035;
 }
 
+header {
+    margin: 1%;
+}
+
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
 .content {
-    height: 94vh;
-    padding: 2% 0;
-}
-
-.contentConteiner {
-    padding: 0 5% 0 15%;
-    height: 70vh;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: start;
+    flex-direction: row;
+    gap: 2.5rem;
+    height: auto;
+    padding: 0 2.5rem;
 }
 
 .conteinerWorkplace {
@@ -42,7 +43,7 @@ body {
 
 .workplaceInput {
     width: 40vw;
-    padding-block: 2em;
+    padding: 1em 0 3em 0;
     border: none;
     outline: 0;
     font-size: 2rem;
@@ -121,7 +122,8 @@ body {
 
 .resultsConteiner {
     display: none;
-    height: 80vh;
+    height: auto;
+    max-height: 90vh;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -172,33 +174,34 @@ body {
 
 
 footer {
-    height: 6vh;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
     .content {
         padding: 4% 0% 0% 0%;
-    }
-
-    .contentConteiner {
         flex-direction: column;
-        padding: 4% 10% 0 10%;
-        height: 90%;
+        align-items: center;
+        justify-content: center;
     }
 
     .conteinerWorkplace {
-        width: 80vw;
+        width: 90vw;
+        height: auto;
         padding: 0;
     }
 
     .workplaceInput {
-        width: 80vw;
+        width: 90vw;
     }
 
     .workplaceWorkers {
@@ -206,7 +209,7 @@ footer {
     }
 
     .conteinerResults {
-        height: auto;
+        max-height: 30vh;
         width: 80vw;
     }
 
@@ -218,11 +221,29 @@ footer {
     .resultsImage {
         display: none;
     }
+
+    .resultsConteiner {
+        width: 75%;
+        gap: 100px;
+    }
+
+    .buttonCopy {
+        margin-inline: 25%;
+    }
 }
 
 @media (max-width: 542px) {
-    .contentConteiner {
-        padding: 0;
+    header {
+        padding-top: 6%;
+    }
+
+    .content {
+        height: auto;
+
+    }
+
+    .conteinerWorkplace {
+        width: 80%;
     }
 
     .workplaceWorkers {
@@ -243,8 +264,16 @@ footer {
     }
 
     .conteinerResults {
-        height: 60em;
+        max-height: 40vh;
         padding: 0;
+    }
+
+    .resultsConteiner {
+        justify-content: space-evenly;
+    }
+
+    .buttonCopy {
+        margin: 0;
     }
 
     .resultsParagraph {

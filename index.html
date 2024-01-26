@@ -11,36 +11,33 @@
 </head>
 
 <body>
-    <header></header>
+    <header><img class="contentImage" src="assets/logo.png" alt="Imagem da Logo"></header>
     <main class="content">
-        <img class="contentImage" src="assets/logo.png" alt="Imagem da Logo">
-        <section class="contentConteiner">
-            <div class="conteinerWorkplace">
-                <textarea class="workplaceInput" id="workplaceInput" placeholder="Digite o seu Texto" spellcheck="false"
-                    style="resize: none" style="overflow: hidden"></textarea>
-                <div class="workplaceWorkers">
-                    <div class="workersInstructions"><img src="assets/exclamation.png" alt="!">Apenas letras minúsculas
-                        e sem acento.</div>
-                    <div class="workersButtons">
-                        <button onclick="encryptPressed()" class="buttonsButton buttonEncrypt"
-                            id="encrypt">Criptografar</button>
-                        <button onclick="decryptPressed()" class="buttonsButton buttonDecrypt"
-                            id="decrypt">Descriptografar</button>
-                    </div>
+        <div class="conteinerWorkplace">
+            <textarea class="workplaceInput" id="workplaceInput" placeholder="Digite o seu Texto" spellcheck="false"
+                style="resize: none" style="overflow: hidden"></textarea>
+            <div class="workplaceWorkers">
+                <div class="workersInstructions"><img src="assets/exclamation.png" alt="!">Apenas letras minúsculas
+                    e sem acento.</div>
+                <div class="workersButtons">
+                    <button onclick="encryptPressed()" class="buttonsButton buttonEncrypt"
+                        id="encrypt">Criptografar</button>
+                    <button onclick="decryptPressed()" class="buttonsButton buttonDecrypt"
+                        id="decrypt">Descriptografar</button>
                 </div>
             </div>
-            <div class="conteinerResults">
-                <div class="resultsConteiner" id="resultsDisplay">
-                    <p class="resultsResult" id="resultsResult"></p>
-                    <button onclick="copyFromClipboard()" class="buttonsButton buttonCopy" id="copy">Copiar</button>
-                </div>
-                <img class="resultsImage" id="resultsImage" src="assets/notFound.png" alt="Imagem de procura">
-                <h1 class="defaultText" id="defaultText">Nenhuma mensagem encontrada</h1>
-                <p class="resultsParagraph" id="resultsParagraph">Digite um texto que você deseja criptografar ou
-                    descriptografar
-                </p>
+        </div>
+        <div class="conteinerResults">
+            <div class="resultsConteiner" id="resultsDisplay">
+                <p class="resultsResult" id="resultsResult"></p>
+                <button onclick="copyFromClipboard()" class="buttonsButton buttonCopy" id="copy">Copiar</button>
             </div>
-        </section>
+            <img class="resultsImage" id="resultsImage" src="assets/notFound.png" alt="Imagem de procura">
+            <h1 class="defaultText" id="defaultText">Nenhuma mensagem encontrada</h1>
+            <p class="resultsParagraph" id="resultsParagraph">Digite um texto que você deseja criptografar ou
+                descriptografar
+            </p>
+        </div>
     </main>
     <footer>Desenvolvido por Ítalo Santana</footer>
 </body>
