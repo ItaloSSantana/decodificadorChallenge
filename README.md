@@ -4,11 +4,11 @@
 <p>Projeto utilizado no challenge da ONE</p>
 
 <h2>�� Como funciona a criptografia </h2>
-1. "e" para "enter"
-2. "i" para "imes"
-3. "a" para "ai"
-4. "o" para "ober"
-5. "u" para "ufat"
+- "e" para "enter"
+- "i" para "imes"
+- "a" para "ai"
+- "o" para "ober"
+- "u" para "ufat"
 
 ## �� Tecnologias utilizadas
 <div>
